@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/icono.png" alt="icono">
+            <h2>Dilmer Rojas</h2>
+        </div>
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+            <!-- Botón de cierre del menú -->
+
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./content.html">Skills</a></li>
+                <li><a href="./content.html">Projects</a></li>
+                <li><a href=".">Contact</a></li>
+                <label for="menu-checkbox" class="close-button">&#10006;</label>
+            </ul>
+        </div>
+    </nav>
+    <main id="m-res">
+        <section id="contact">
+            <form action="">
+                <h3>Contact Me</h3>
+                <label for="name" class="lab">Name: </label>
+                <input type="text" name="name" id="inpt" required>
+                <label for="email" class="lab">Email: </label>
+                <input type="email" name="email" id="inpt" required>
+                <label for="message" class="lab">Message: </label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+                <button type="submit" class="btn-s">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

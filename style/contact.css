@@ -1,0 +1,163 @@
+@media screen and (max-width: 790px) {
+    /*Contact Me*/
+    #contact {
+        display: flex;
+        /* Usa el modelo de caja flexible para alinear elementos verticalmente */
+        flex-direction: column;
+        /* Alinea los elementos en una columna vertical */
+        background-color: #09242aad;
+        /* Establece el color de fondo del contenedor */
+        margin-top: 5%;
+        /* Agrega un margen superior del 5% del alto de la ventana */
+        margin-left: 20%;
+        /* Agrega un margen izquierdo del 20% del ancho de la ventana */
+        margin-right: 20%;
+        /* Agrega un margen derecho del 20% del ancho de la ventana */
+        border-radius: 5%;
+        /* Aplica un radio de borde redondeado del 5% */
+        padding-left: 30px;
+        /* Agrega un relleno a la izquierda del contenedor */
+        padding-right: 30px;
+        /* Agrega un relleno a la derecha del contenedor */
+        padding-top: 20px;
+        /* Agrega un relleno superior del 20px */
+        padding-bottom: 20px;
+        /* Agrega un relleno inferior del 20px */
+        margin-bottom: 20px;
+        /* Agrega un margen inferior del 20px */
+    }
+
+    #contact h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #contact form label,
+    textarea {
+        display: block;
+    }
+
+    #contact form .lab {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #ffffff;
+        font-family: 'Bad Script', cursive;
+        /* font-family: 'Sansita Swashed', cursive; */
+    }
+
+    #contact form #inpt {
+        color: #ffffff;
+        background-color: #0d16248f;
+        border-color: #0080007d;
+        border-radius: 20px;
+        border-style: groove;
+        height: 30px;
+        width: 98%;
+    }
+
+    #contact form #message {
+        background-color: #0d16248f;
+        border-radius: 15px;
+        border-style: groove;
+        border-color: #0080007d;
+        height: 50px;
+        width: 70%;
+        color: white;
+        text-align: center;
+        max-width: 70%;
+    }
+    .btn-s {
+    color: #ffffffc6;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 12px;
+    padding: 10px;
+    border-style: groove;
+    border-color: #0080007d;
+    background-color: #00ff6a51;
+    }
+}
+@media screen and (min-width: 790px) {
+    /*Contact Me*/
+    #contact {
+        display: flex;
+        /* Usa el modelo de caja flexible para alinear elementos verticalmente */
+        flex-direction: column;
+        /* Alinea los elementos en una columna vertical */
+        background-color: #09242aad;
+        /* Establece el color de fondo del contenedor */
+        margin-top: 5%;
+        /* Agrega un margen superior del 5% del alto de la ventana */
+        margin-left: 22vw;
+        /* Agrega un margen izquierdo del 20% del ancho de la ventana */
+        margin-right: 20%;
+        /* Agrega un margen derecho del 20% del ancho de la ventana */
+        border-radius: 5%;
+        /* Aplica un radio de borde redondeado del 5% */
+        padding-left: 30px;
+        /* Agrega un relleno a la izquierda del contenedor */
+        padding-right: 30px;
+        /* Agrega un relleno a la derecha del contenedor */
+        padding-top: 20px;
+        /* Agrega un relleno superior del 20px */
+        padding-bottom: 20px;
+        /* Agrega un relleno inferior del 20px */
+        margin-bottom: 20px;
+        /* Agrega un margen inferior del 20px */
+        width: 50vw;
+    }
+    #contact h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #contact form label,
+    textarea {
+        display: block;
+    }
+
+    #contact form .lab {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #ffffff;
+        font-family: 'Bad Script', cursive;
+        /* font-family: 'Sansita Swashed', cursive; */
+    }
+
+    #contact form #inpt {
+        color: #ffffff;
+        background-color: #0d16248f;
+        border-color: #0080007d;
+        border-radius: 20px;
+        border-style: groove;
+        height: 40px;
+        width: 98%;
+    }
+
+    #contact form #message {
+        background-color: #0d16248f;
+        border-radius: 15px;
+        border-style: groove;
+        border-color: #0080007d;
+        height: 175px;
+        max-height: 175px;
+        width: 70%;
+        max-width: 70%;
+        color: white;
+        text-align: center;
+    }
+    .btn-s {
+    color: #ffffffc6;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 12px;
+    padding: 10px;
+    border-style: groove;
+    border-color: #0080007d;
+    background-color: #00ff6a51;
+    }
+}
