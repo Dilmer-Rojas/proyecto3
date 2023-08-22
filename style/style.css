@@ -436,6 +436,7 @@ footer img {
 
     /* Añadir estilos a el contenido del main */
     h1 {
+        text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
         font-size: 90px;
         margin-top: 30px;
         margin-left: 5%;
@@ -615,10 +616,12 @@ footer img {
 @media screen and (max-width: 520px) {
     /* Cambiar el tamaño del h1 para dispositivos aún más pequeños */
     h1 {
+        text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
         margin-top: 10px;
         font-size: 40px;
     }
     #description {
+        font-family: cursive, 'Times New Roman', Times, serif;
         font-size: 15px;
     }
     .bottom {
