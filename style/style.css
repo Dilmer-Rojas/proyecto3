@@ -442,7 +442,7 @@ footer img {
     }
 
     #description {
-        font-family: cursive;
+        font-family: cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 25px;
         text-align: justify;
         margin-left: 5%;
