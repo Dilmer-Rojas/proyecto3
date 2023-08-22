@@ -107,12 +107,30 @@
         margin-bottom: 20px;
         /* Agrega un margen inferior del 20px */
         width: 50vw;
+        box-shadow: 3px 3px 7px 7px #00ffa2ae; /* Sombra luminosa */
     }
+
     #contact h3 {
         text-align: center;
         font-size: 20px;
     }
-
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    #contact h3 {
+        transition: transform 0.3s ease-in-out;
+    }
+    #contact h3 {
+        animation: scale 2s ease-in-out infinite;
+    }
     #contact form label,
     textarea {
         display: block;
@@ -149,15 +167,48 @@
         text-align: center;
     }
     .btn-s {
-    color: #ffffffc6;
-    text-transform: uppercase;
-    padding-top: 5px;
-    margin-top: 20px;
-    width: 100px;
-    border-radius: 12px;
-    padding: 10px;
-    border-style: groove;
-    border-color: #0080007d;
-    background-color: #00ff6a51;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #ffffffc6;
+        text-transform: uppercase;
+        padding-top: 5px;
+        margin-top: 20px;
+        width: 130px;
+        border-radius: 12px;
+        padding: 15px;
+        border-style: none;
+        border-color: #0080007d;
+        background-color: #00ff6a51;
+        box-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
+    }
+    .btn-s:hover {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-style: none;
+        background-color: #00f2ff55;
+        color: #ffffffc6;
+        text-transform: uppercase;
+        padding-top: 5px;
+        margin-top: 20px;
+        width: 130px;
+        border-radius: 12px;
+        padding: 15px;
+    }
+    /*Animación al buttom*/
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .btn-s {
+        transition: transform 0.3s ease-in-out;
+    }
+    .btn-s {
+        animation: scale 2s ease-in-out infinite;
     }
 }
