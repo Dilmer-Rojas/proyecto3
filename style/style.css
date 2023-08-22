@@ -707,4 +707,7 @@ footer img {
     .socials {
         margin-left: 70vw;
     }
+    .menu li {
+        font-family: 'Concert One', cursive;
+    }
 }
