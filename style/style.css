@@ -125,6 +125,10 @@ b {
     color: #00ff80;
     text-shadow: 2px 2px 7px #00bfffb3; /* Sombra luminosa */
 }
+
+#description {
+    font-family: 'Tulpen One', cursive;
+}
 /* FOOTER*/
 footer {
     background-color: #42413e;
@@ -230,7 +234,6 @@ footer img {
     }
 
     #description {
-        font-family: cursive;
         font-size: 18px;
         margin-top: -20px;
         text-align: justify;
@@ -397,6 +400,7 @@ footer img {
 
     .menu li {
         margin: 10px 0;
+        font-family: Arial, Helvetica, sans-serif;
         /*Agrega margen vertical a los elementos del menú desplegable*/
     }
 
@@ -443,7 +447,6 @@ footer img {
     }
 
     #description {
-        font-family: cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 25px;
         text-align: justify;
         margin-left: 5%;
@@ -621,7 +624,6 @@ footer img {
         font-size: 40px;
     }
     #description {
-        font-family: cursive, 'Times New Roman', Times, serif;
         font-size: 15px;
     }
     .bottom {
