@@ -25,6 +25,7 @@
         /* Agrega un relleno inferior del 20px */
         margin-bottom: 20px;
         /* Agrega un margen inferior del 20px */
+        box-shadow: 3px 3px 7px 7px #00ffa2ae; /* Sombra luminosa */
     }
 
     #contact h3 {
@@ -85,6 +86,11 @@
         background-color: #00f2ff55;
         color: #ffffffc6;
         text-transform: uppercase;
+        padding-top: 5px;
+        margin-top: 20px;
+        width: 100px;
+        border-radius: 12px;
+        padding: 10px;
     }
     /*Animación al buttom*/
     @keyframes scale {
