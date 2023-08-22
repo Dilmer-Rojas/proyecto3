@@ -127,7 +127,7 @@ b {
 }
 
 #description {
-    font-family: 'Tulpen One', cursive;
+    font-family: 'Saira Condensed', sans-serif;
 }
 /* FOOTER*/
 footer {
@@ -234,7 +234,7 @@ footer img {
     }
 
     #description {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: -20px;
         text-align: justify;
         margin-left: 70px;
@@ -400,7 +400,7 @@ footer img {
 
     .menu li {
         margin: 10px 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Concert One', cursive;
         /*Agrega margen vertical a los elementos del menú desplegable*/
     }
 
@@ -440,6 +440,7 @@ footer img {
 
     /* Añadir estilos a el contenido del main */
     h1 {
+        font-family: 'Concert One', cursive;
         text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
         font-size: 90px;
         margin-top: 30px;
@@ -447,7 +448,7 @@ footer img {
     }
 
     #description {
-        font-size: 40px;
+        font-size: 20px;
         text-align: justify;
         margin-left: 5%;
         margin-right: 5%;
@@ -468,13 +469,14 @@ footer img {
         cursor: pointer;
         background-color: #00FF00;
         transition: bacground-color 0.3s ease-in-out;
+        font-family: 'Concert One', cursive;
     }
 
     .bottom:hover {
         font-size: 30px;
         background-color: #ffd700;
         color: black;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Concert One', cursive;
         border-radius: 10px;
         margin-left: 5%;
         margin-bottom: 50px;
@@ -619,6 +621,7 @@ footer img {
 @media screen and (max-width: 520px) {
     /* Cambiar el tamaño del h1 para dispositivos aún más pequeños */
     h1 {
+        font-family: 'Concert One', cursive;
         text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
         margin-top: 10px;
         font-size: 40px;
@@ -627,9 +630,11 @@ footer img {
         font-size: 15px;
     }
     .bottom {
+        font-family: 'Concert One', cursive;
         font-size: 20px;
     }
     .bottom:hover {
+        font-family: 'Concert One', cursive;
         font-size: 20px;
     }
     /* FOOTER --*/
