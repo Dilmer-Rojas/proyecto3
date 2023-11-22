@@ -1,53 +1,46 @@
+
+
 /*Estilos Generales*/
 html,
 body {
     margin: 0;
-    /* Elimina el margen predeterminado del cuerpo de la página */
     padding: 0;
-    /* Elimina el relleno predeterminado */
     height: 100%;
-    /* Altura de 100%*/
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-image: url(../img/fondo.jpeg);
-    background-size: cover;
+    background-image: url(../img/background1.jpg);
+    background-color: #3c3b3b;
+    /* Asegúrate de tener una imagen de fondo que sea responsiva o utilices 'background-size: cover;' */
+    background-size: 100% 650px;
+    font-family: var(--font-logo); /* Revisar si se necesita esta fuente */
+    /* Duplicaste la propiedad 'font-family' aquí */
+    color: var(--light-color);
+    opacity: 1.9;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Superposición semitransparente */
 body::before {
     content: "";
-    position: fixed;
-    /* Fija el pseudo-elemento para cubrir toda la ventana */
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #00000046;
-    /* Cambia el valor alfa (0.5) para ajustar la opacidad */
+    background-color: #00000098;
     z-index: -1;
-    /* Mueve la superposición detrás del contenido */
 }
 
 /*Estilos del menú*/
 .navbar {
     display: flex;
-    /*Utiliza el modelo flexible para la barra de navegación*/
     justify-content: space-between;
-    /*Distribuye los elementos a los extremos*/
     align-items: center;
-    /*Centra verticalmente los elementos*/
-    /*background-color: #333333; /*Color de fondo de la barra de navegación*/
     padding: 10px 20px;
-    /*Espaciado interno*/
     color: white;
-    /*Color del Texto*/
     margin-right: 20px;
-    /*Para añadir espaciado entre el li y el margen*/
 }
 
 .logo {
@@ -121,238 +114,344 @@ body::before {
     color: #ffd700;
     /*Cambia el color del texto al pasar el ratón por encima*/
 }
+
 b {
     color: #00ff80;
-    text-shadow: 2px 2px 7px #00bfffb3; /* Sombra luminosa */
+    text-shadow: 1px 1px 3px #1495c8b3;
+    /* Sombra luminosa */
 }
 
 #description {
-    font-family: 'Saira Condensed', sans-serif;
-}
-/* FOOTER*/
-footer {
-    background-color: #42413e;
-    margin-top: -30px;
-    padding-top: 15px;
-    color: #ffffff;
-}
-footer .copi {
-    text-align: center;
-    background-color: #000000eb;
-    color: #ffffff;
-    padding: 10px;
-}
-/* animación a los íconos de las redes sociales */
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+    /* font-family: 'Saira Condensed', sans-serif; */
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #faeca3;
 }
 
-.redes-s, #inst {
-    transition: transform 0.3s ease-in-out;
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px 0;
+    padding-top: 30px;
 }
-.redes-s, #inst {
-    animation: scale 2s ease-in-out infinite;
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-/* footer div {
-background-color: #ffd700;
-} */
-footer img {
-    height: 20px;
-    width: auto;
-    margin-left: 30px;
-}
-.c {
+
+footer .row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.c .parrafo {
-    margin-left: 10px;
-    margin-top: 3.5px;
-}
-.social {
-    margin-left: 25px;
-    text-transform: uppercase;
-}
-#social {
+
+footer .col {
+    flex-basis: 25%;
     margin-bottom: 20px;
 }
 
-.redes-s {
-    height: 30px;
-    width: auto;
-    padding-bottom: -18px;
-}
-#inst {
-    margin-bottom: -5px;
-    height: 35px;
-    width: auto;
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* text-transform: uppercase; */
 }
 
-.socials {
-    margin-left: 70vw;
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .text-center {
+    text-align: left;
+}
+
+footer #socials img {
+    max-width: 40px;
+}
+
+footer #skills img {
+    border-radius: 50%;
+}
+
+/* .sections {
+    width: inherit;
+    min-height: inherit;
+    font-family: var(--font-logo);
+    background-color: #1b1d27;
+    color: var(--light-color);
+} */
+
+
 
 /*Oculta el input checkbox y la etiqueta del ícono en pantallas grandes*/
-@media screen and (min-width: 790px) {
 
-    #menu-checkbox,
-    .menu-icon {
-        display: none;
+#menu-checkbox,
+.menu-icon {
+    display: none;
+}
+
+/* Para ocultar el ícono de cierre */
+#menu-checkbox,
+.close-button {
+    display: none;
+}
+
+.logo h2 {
+    margin-top: 27px;
+    margin-left: 8px;
+    font-size: 25px;
+}
+
+/* Main no responsive */
+#m-res {
+    display: block;
+    margin-bottom: auto;
+    height: 78%;
+}
+
+#m-res h1 {
+    text-shadow: 2px 2px 5px #00bfffb3;
+    /* Sombra luminosa */
+    text-align: left;
+    width: 45vw;
+    font-size: 45px;
+    margin-left: 6vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+/* #content-2 {
+        margin-top: 80px;
+    } */
+
+#description {
+    font-size: 3vh;
+    margin-top: 0;
+    text-align: justify;
+    margin-left: 7vw;
+    display: block;
+    /* Cambia el flujo del elemento a en línea y bloque */
+    /* vertical-align: baseline; */
+    /* Alinea verticalmente con la imagen */
+    width: 30vw;
+    /*48%*/
+    /* Establece el ancho del párrafo */
+    margin-right: 50px;
+    /* Agrega un margen derecho para separar de la imagen */
+}
+
+.container-c {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre elementos */
+}
+
+.element {
+    text-align: center;
+    flex-basis: calc(33.33% - 10px);
+    /* Ancho del elemento */
+}
+
+.element img {
+    max-width: 100%;
+    /* Ajustar imagen al tamaño máximo del contenedor */
+}
+
+#my-skills-c {
+    /* margin-top: 15.7vh; */
+    padding-top: 5vh;
+    background-color: #b9b9b93b;
+    height: auto;
+}
+
+.habilidades {
+    margin-left: 40px;
+}
+
+.aboutme {
+    margin-left: 70px;
+}
+
+.aboutme .t {
+    color: #00ff80;
+    /* margin-left: 5px; */
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.cont {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: var(--wp--style--block-gap, 4.3em );
+}
+
+.elem {
+    /* text-align: center; */
+    flex-basis: calc(43.33% - 10px);
+}
+
+.linear {
+    max-width: 120px;
+    margin-top: -5vh;
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+    color: #00ff80;
+}
+
+.aboutme .t2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: #00f54abf;
+}
+.aboutme p {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: yellow;
+}
+.c-3 {
+    background-color: #b9b9b93b;
+    height: 55vh;
+}
+
+.cont-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem-3 {
+    text-align: left;
+    flex-basis: calc(35.3% - 15px);
+}
+
+.elem-3 .gif-p {
+    display: inline-block;
+    /* Cambia el flujo del elemento a en línea y bloque */
+    max-width: 40vh;
+    /* Limita el ancho de la imagen */
+    border-radius: 50%;
+    /* Agrega borde redondeado */
+    vertical-align: middle;
+    /* Alinea verticalmente con el párrafo */
+    margin-right: 2px;
+    margin-top: 4vh;
+    margin-left: -5vw;
+}
+.elem-3 p {
+    margin-left: -5vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: yellow;
+}
+
+.bottom {
+    font-size: 2.5vh;
+    text-transform: capitalize;
+    color: #121824;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-left: 5vw;
+    padding: 15px 20px;
+    max-width: 40vw;
+    border-style: none;
+    border-color: aliceblue;
+    cursor: pointer;
+    background-color: hsl(120, 100%, 50%);
+}
+
+.bottom:hover {
+    font-size: 2.5vh;
+    background-color: #ffd700;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    margin-left: 5vw;
+    padding: 15px 20px;
+    max-width: 250px;
+}
+
+/*SKILLS*/
+.title-2 {
+    /* text-align: center; */
+    margin-left: 40px;
+    font-size: 25px;
+    /* padding-top: 10px; */
+}
+
+#skills {
+    /* margin-top: 190px; */
+    /* background-color: #b9b9b93b; */
+    height: auto;
+}
+
+.my-skills div img {
+    max-width: 10%;
+}
+
+.my-skills {
+    display: flex;
+}
+
+.skill-c {
+    text-align: left;
+    flex-basis: calc(33.3% - 10px);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#linea {
+    margin-left: 4vw;
+    margin-right: 4vh;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
     }
 
-    /* Para ocultar el ícono de cierre */
-    #menu-checkbox,
-    .close-button {
-        display: none;
+    to {
+        transform: scale(1.2);
+        /* Cambia el tamaño de la imagen al 120% */
     }
+}
 
-    .logo h2 {
-        margin-top: 27px;
-        margin-left: 8px;
-        font-size: 25px;
-    }
-
-    /* Main no responsive */
-    #m-res {
-        display: inline-block;
-        margin-bottom: 100px;
-    }
-
-    #m-res h1 {
-        text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
-        font-size: 50px;
-        display: block;
-        margin-left: 6%;
-        margin-top: 30px;
-    }
-
-    #description {
-        font-size: 20px;
-        margin-top: -20px;
-        text-align: justify;
-        margin-left: 70px;
-        display: inline-block;
-        /* Cambia el flujo del elemento a en línea y bloque */
-        vertical-align: middle;
-        /* Alinea verticalmente con la imagen */
-        width: 48%;
-        /* Establece el ancho del párrafo */
-        margin-right: 50px;
-        /* Agrega un margen derecho para separar de la imagen */
-    }
-
-    .gif-p {
-        display: inline-block;
-        /* Cambia el flujo del elemento a en línea y bloque */
-        max-width: 30%;
-        /* Limita el ancho de la imagen */
-        border-radius: 60px;
-        /* Agrega borde redondeado */
-        vertical-align: middle;
-        /* Alinea verticalmente con el párrafo */
-        margin-right: 10px;
-        margin-top: -40px;
-        margin-left: 30px;
-    }
-    .bottom {
-        font-size: 20px;
-        text-transform: capitalize;
-        color: #121824;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-transform: capitalize;
-        border-radius: 10px;
-        margin-left: 5%;
-        margin-top: 20px;
-        padding: 15px 20px;
-        max-width: 250px;
-        border-style: none;
-        border-color: aliceblue;
-        cursor: pointer;
-        background-color: #00ff00;
-        transition: bacground-color 0.3s ease-in-out;
-        margin-bottom: 40px;
-    }
-
-    .bottom:hover {
-        font-size: 20px;
-        background-color: #ffd700;
-        color: black;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        border-radius: 10px;
-        margin-left: 5%;
-        /* margin-bottom: 40px;
-        padding: 15px 20px; */
-        max-width: 250px;
-        border-style: none;
-    }  
-    
-    /*SKILLS*/
-    .title-2 {
-        text-align: center;
-        font-size: 35px;
-        padding-top: 10px;
-    }
-    #skills {
-        background-color: #09242aad;
-        margin-right: 30px;
-        margin-left: 40px;
-        border-radius: 5%;
-    }
-    .skill {
-        display: flex; /* Establece el modelo de caja flexible para los elementos hijos */
-        justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
-        align-items: center; /* Centra verticalmente los elementos */
-    }
-    
-    .skill > div {
-        text-align: center; /* Centra el contenido de cada div hijo horizontalmente */
-        margin: 0 10px; /* Agrega un margen horizontal para separar los elementos */
-    }
-    .remot {
-        margin-top: 10%;
-        margin-bottom: -30px;
-    }
-    @keyframes zoomIn {
-        from {
-            transform: scale(1);
-        }
-        to {
-            transform: scale(1.2); /* Cambia el tamaño de la imagen al 120% */
-        }
-    }
-    
-    /* Aplica la animación cuando el ratón pasa sobre la imagen */
-    .remot:hover {
-        animation: zoomIn 0.3s forwards; /* Inicia la animación al pasar el ratón y mantiene el último estado */
-    }    
-    #skills .remot {
-        width: 70px;
-        height: 80px;
-        margin-left: 55px;
-        padding: 5px 5px;
-    }
-    .div-s img {
-        margin-right: 55px;
-    }
-    h4 {
-        margin-left: 47px;
-        padding: 8.5px 8.5px;
-        text-align: center;
-    }
-    #ta {
-        margin-right: 50px;
-    }
+/* Aplica la animación cuando el ratón pasa sobre la imagen */
+.remot:hover {
+    animation: zoomIn 0.3s forwards;
+    /* Inicia la animación al pasar el ratón y mantiene el último estado */
 }
 
 /*Estilos responsive*/
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 921px) {
 
     html,
     body {
@@ -383,9 +482,11 @@ footer img {
         z-index: 1000;
         /* Asegura que el menú esté en la parte superior */
     }
+
     .navbar {
         margin-top: 10px;
     }
+
     .logo h2 {
         font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-top: 27px;
@@ -441,7 +542,8 @@ footer img {
     /* Añadir estilos a el contenido del main */
     h1 {
         font-family: 'Concert One', cursive;
-        text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
+        text-shadow: 5px 5px 10px #00bfffb3;
+        /* Sombra luminosa */
         font-size: 90px;
         margin-top: 30px;
         margin-left: 5%;
@@ -488,7 +590,7 @@ footer img {
     }
 
     /*Contact Me*/
-    
+
 
     /* .btn-s {
         color: #ffffffc6;
@@ -523,6 +625,7 @@ footer img {
         text-align: center;
         font-size: 20px;
     }
+
     #skills {
         background-color: #0d16248f;
         margin-right: 1%;
@@ -530,33 +633,45 @@ footer img {
         margin-top: 10%;
         border-style: groove;
     }
+
     .skill {
-        display: flex; /* Establece el modelo de caja flexible para los elementos hijos */
-        justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
-        align-items: center; /* Centra verticalmente los elementos */
+        display: flex;
+        /* Establece el modelo de caja flexible para los elementos hijos */
+        justify-content: space-around;
+        /* Distribuye los elementos con espacio alrededor */
+        align-items: center;
+        /* Centra verticalmente los elementos */
     }
-    
-    .skill > div {
-        text-align: center; /* Centra el contenido de cada div hijo horizontalmente */
-        margin: 0 10px; /* Agrega un margen horizontal para separar los elementos */
+
+    .skill>div {
+        text-align: center;
+        /* Centra el contenido de cada div hijo horizontalmente */
+        margin: 0 10px;
+        /* Agrega un margen horizontal para separar los elementos */
     }
+
     .remot {
         margin-top: 10%;
         margin-bottom: -30px;
     }
+
     @keyframes zoomIn {
         from {
             transform: scale(1);
         }
+
         to {
-            transform: scale(1.2); /* Cambia el tamaño de la imagen al 120% */
+            transform: scale(1.2);
+            /* Cambia el tamaño de la imagen al 120% */
         }
     }
-    
+
     /* Aplica la animación cuando el ratón pasa sobre la imagen */
     .remot:hover {
-        animation: zoomIn 0.3s forwards; /* Inicia la animación al pasar el ratón y mantiene el último estado */
-    }    
+        animation: zoomIn 0.3s forwards;
+        /* Inicia la animación al pasar el ratón y mantiene el último estado */
+    }
+
     #skills .remot {
         width: 30px;
         height: 40px;
@@ -564,12 +679,14 @@ footer img {
         padding: 3px 3px;
         margin-bottom: 3px;
     }
+
     h4 {
         margin-left: 15px;
         padding: 2.5px 2.5px;
         text-align: center;
         font-size: 13px;
     }
+
     /* FOOTER*/
     footer {
         background-color: #42413e;
@@ -577,28 +694,34 @@ footer img {
         padding-top: 15px;
         color: #ffffff;
     }
+
     footer .copi {
         text-align: center;
         background-color: #000000eb;
         color: #ffffff;
         padding: 10px;
     }
+
     footer img {
         height: 20px;
         width: auto;
         margin-left: 30px;
     }
+
     .c {
         display: flex;
     }
+
     .c .parrafo {
         margin-left: 10px;
         margin-top: 3.5px;
     }
+
     .social {
         margin-left: 25px;
         text-transform: uppercase;
     }
+
     #social {
         margin-bottom: 20px;
     }
@@ -608,6 +731,7 @@ footer img {
         width: auto;
         padding-bottom: -18px;
     }
+
     #inst {
         margin-bottom: -5px;
         height: 35px;
@@ -618,25 +742,32 @@ footer img {
         margin-left: 70vw;
     }
 }
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 320px) {
+
     /* Cambiar el tamaño del h1 para dispositivos aún más pequeños */
     h1 {
         font-family: 'Concert One', cursive;
-        text-shadow: 5px 5px 10px #00bfffb3; /* Sombra luminosa */
+        text-shadow: 5px 5px 10px #00bfffb3;
+        /* Sombra luminosa */
         margin-top: 10px;
         font-size: 40px;
     }
+
     #description {
         font-size: 15px;
     }
+
     .bottom {
         font-family: 'Concert One', cursive;
         font-size: 20px;
     }
+
     .bottom:hover {
         font-family: 'Concert One', cursive;
         font-size: 20px;
     }
+
     /* FOOTER --*/
     footer {
         background-color: #42413e;
@@ -645,29 +776,36 @@ footer img {
         width: 100vw;
         color: #ffffff;
     }
+
     footer .copi {
         text-align: center;
         background-color: #000000eb;
         color: #ffffff;
         padding: 10px;
     }
+
     /* animación a los íconos de las redes sociales */
     @keyframes scale {
         0% {
             transform: scale(1);
         }
+
         50% {
             transform: scale(1.1);
         }
+
         100% {
             transform: scale(1);
         }
     }
 
-    .redes-s, #inst {
+    .redes-s,
+    #inst {
         transition: transform 0.3s ease-in-out;
     }
-    .redes-s, #inst {
+
+    .redes-s,
+    #inst {
         animation: scale 2s ease-in-out infinite;
     }
 
@@ -676,17 +814,21 @@ footer img {
         width: auto;
         margin-left: 30px;
     }
+
     .c {
         display: flex;
     }
+
     .c .parrafo {
         margin-left: 10px;
         margin-top: 3.5px;
     }
+
     .social {
         margin-left: -200px;
         text-transform: uppercase;
     }
+
     #social {
         display: flex;
         margin-left: -200px;
@@ -698,6 +840,7 @@ footer img {
         width: auto;
         padding-bottom: -18px;
     }
+
     #inst {
         margin-bottom: -5px;
         height: 35px;
@@ -707,6 +850,7 @@ footer img {
     .socials {
         margin-left: 70vw;
     }
+
     .menu li {
         font-family: 'Concert One', cursive;
     }

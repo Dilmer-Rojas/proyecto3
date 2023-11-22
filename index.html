@@ -2,79 +2,266 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="./img/icono-p.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="assets/style/content.css">
+  <link rel="stylesheet" href="assets/style/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet" />
+  <title>Laureano Rojas | Analista de Datos</title>
+  <link rel="shortcut icon" href="./assets/img/icono-p.ico" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./img/icono.png" alt="icono">
-            <h2>Dilmer Rojas</h2>
-        </div>
-        <div class="menu-toggle">
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu-icon">&#9776;</label>
-            <!-- Botón de cierre del menú -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/img/icono.png" alt="icono">
+      <h2>Rojas</h2>
+    </div>
+    <div class="menu-toggle">
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+      <!-- Botón de cierre del menú -->
 
-            <ul class="menu">
-                <li><a href=".">Home</a></li>
-                <li><a href="./about.html">Skills</a></li>
-                <li><a href="./about.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <label for="menu-checkbox" class="close-button">&#10006;</label>
-            </ul>
+      <ul class="menu">
+        <li><a href=".">Inicio</a></li>
+        <li><a href=".">Sobre mí</a></li>
+        <li><a href="./">Portafolio</a></li>
+        <li><a href="./">Contáctame</a></li>
+        <label for="menu-checkbox" class="close-button">&#10006;</label>
+      </ul>
+    </div>
+  </nav>
+  <main id="m-res">
+    <h1><b>Datos transformadores</b> la fuente de decisiones estratégicas para empresas visionarias</h1>
+    <section id="home">
+      <article>
+        <p id="description">
+          El análisis de datos revela oportunidades,
+          predice tendencias y proporciona claridad.
+          Promover estrategias, minimizar riesgos.
+          y mejorar el éxito empresarial.
+          Descubra el poder detrás de los datos.
+        </p>
+        <button id="btn-download" class="bottom">
+          Descargar CV
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-download">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+      </article>
+    </section>
+  </main>
+  <!--SKILLS-->
+  <section id="my-skills-c">
+    <h3 class="habilidades">Mis Habilidades</h3>
+    <div class="container-c">
+      <div class="element">
+        <img src="./assets/img/data-management.jpg" alt="">
+        <p><strong><span style="color:#63b3c0">▷</span>
+            Limpieza</strong> <strong>de data</strong><br><strong><span style="color:#63b3c0">▷</span></strong>
+          <strong>Procesamiento</strong><br><strong> <strong><span style="color:#63b3c0">▷</span></strong>
+            Exploración</strong>
+        </p>
+      </div>
+      <div class="element">
+        <img src="./assets/img/data-analysis.jpg" alt="">
+        <p><strong><span style="color:#63b3c0">▷</span></strong>
+          <strong>Análisis de resultados</strong><br><strong> <strong><span style="color:#63b3c0">▷</span></strong>
+            Interpretación de resultados</strong>
+        </p>
+      </div>
+      <div class="element">
+        <img src="./assets/img/data-visualization.jpg" alt="">
+        <p><strong><span style="color:#63b3c0">▷</span>
+            Comunicación</strong> <strong>de resultados</strong><br><strong><span
+              style="color:#63b3c0">▷</span></strong> <strong>Visualización</strong><br><strong> <strong><span
+                style="color:#63b3c0">▷</span></strong> Storytelling</strong></p>
+      </div>
+    </div>
+  </section>
+  <section class="aboutme">
+    <h3 class="t">Sobre mí</h3>
+    <div class="cont">
+      <div class="elem">
+        <h3 class="t2">Desbloqueando el potencial empresarial a través del análisis de datos estratégico</h3>
+      </div>
+      <div class="elem">
+        <hr class="linear">
+        <p>¡Hola, mi nombre es Laureano!
+          <br>
+          <br>
+          Soy un apasionado analista de datos originario de Perú, con formación en ingeniería de sistemas. Mi enfoque se
+          centra en convertir datos complejos en valiosos insights estratégicos para la toma de decisiones informadas.
+          <br>
+          <br>
+          Mi habilidad radica en descifrar patrones y comunicar descubrimientos de manera clara y efectiva. Mi
+          portafolio abarca desde análisis predictivos hasta implementaciones de machine learning, demostrando
+          soluciones innovadoras y orientadas a resultados tangibles.
+          <br>
+          <br>
+          Estoy siempre en busca de desafíos emocionantes y nuevas herramientas tecnológicas. Mi objetivo es seguir
+          contribuyendo al éxito empresarial mediante la aplicación de análisis de datos perspicaces y soluciones que
+          impulsen un impacto significativo en cada proyecto.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="c-3">
+    <div class="cont-3">
+      <div class="elem-3">
+        <img src="./assets/img/mi-foto.jpeg" alt="gif-prog" class="gif-p">
+      </div>
+      <div class="elem-3">
+        <p>Al analizar los datos que generamos, podemos identificar oportunidades. Esto significa menores costos,
+          mejores decisiones y optimización de nuevos productos y servicios.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h3 class="title-2">Mis herramientas de análisis</h3>
+    <hr id="linea">
+    <div class="my-skills">
+      <div class="skill-c">
+        <img src="../assets/img/piton.png" alt="" class="remot">
+        <h4 class="name-skill">1. Python</h4>
+        <p>Mi lenguaje favorito. El manejo de bibliotecas como Panda y Numpy facilita la manipulación de datos. Todos
+          los días aprendo algo nuevo sobre este asombroso lenguaje y sus aplicaciones en el análisis de datos.</p>
+
+      </div>
+      <div class="skill-c">
+        <img src="../assets/img/power-bi.svg" alt="" class="remot">
+        <h4 class="name-skill">2. Power BI</h4>
+        <p>Mi herramienta de visualización favorita. Me encanta la simplicidad de la interfaz, la capacidad de utilizar
+          DAX y la facilidad para crear paneles interactivos.</p>
+      </div>
+      <div class="skill-c">
+        <img src="../assets/img/servidor-sql.png" alt="" class="remot">
+        <h4 class="name-skill">3. SQL Server</h4>
+        <p>Es una de las herramientas más importantes para gestionar grandes cantidades de datos. Lo uso principalmente
+          para estandarización y exploración de datos.</p>
+      </div>
+    </div>
+    <hr id="linea">
+    <div class="my-skills">
+      <div class="skill-c">
+        <img src="../assets/img/excel.png" alt="" class="remot">
+        <h4 class="name-skill">4. Excel</h4>
+        <p>Power Query, Power Pivot, tablas dinámicas y fórmulas siguen siendo excelentes herramientas para el análisis
+          de datos. Muy útil para el preprocesamiento de datos.</p>
+      </div>
+      <div class="skill-c">
+        <img src="../assets/img/tableau.png" alt="" class="remot">
+        <h4 class="name-skill">5. Tableau</h4>
+        <p>Práctico y sencillo. Ofrece una variedad de opciones para personalizar informes. Tableau Public también le
+          permite compartir su trabajo con el mundo.</p>
+      </div>
+      <div class="skill-c">
+        <img src="../assets/img/ingles.png" alt="" class="remot">
+        <h4 class="name-skill">6. Inglés</h4>
+        <p>Aprender inglés ha sido de gran ayuda en mi vida profesional, trabajando con clientes de todo el mundo. Tengo
+          experiencia en traducción e interpretación del idioma.</p>
+      </div>
+    </div>
+  </section>
+  <!--PROJECTS-->
+  <section id="projects">
+    <h3 class="title-2">Projects</h3>
+    <div class="project">
+      <div id="proyecto1">
+        <a href="http://" target="_blank" rel="noopener noreferrer" class="project-img"><img
+            src="../assets/img/proyecto.jpeg" alt="proyecto1"></a>
+        <h3 id="proyect-title">Project Name</h3>
+      </div>
+      <div id="proyecto1">
+        <a href="http://" target="_blank" rel="noopener noreferrer" class="project-img"><img
+            src="../assets/img/proyecto.jpeg" alt="proyecto1"></a>
+        <h3 id="proyect-title">Project Name</h3>
+      </div>
+    </div>
+    <div class="project">
+      <div id="proyecto1">
+        <a href="http://" target="_blank" rel="noopener noreferrer" class="project-img"><img
+            src="../assets/img/proyecto.jpeg" alt="proyecto1"></a>
+        <h3 id="proyect-title">Project Name</h3>
+      </div>
+      <div id="proyecto1">
+        <a href="http://" target="_blank" rel="noopener noreferrer" id="project-imgu"><img
+            src="../assets/img/proyecto.jpeg" alt="proyecto1"></a>
+        <h3 id="proyect-title">Project Name</h3>
+      </div>
+    </div>
+  </section>
+  <!--Contact-->
+  <section id="contact">
+    <form action="">
+      <h3>Contact Me</h3>
+      <label for="name" class="lab">Name: </label>
+      <input type="text" name="name" id="inpt" required>
+      <label for="email" class="lab">Email: </label>
+      <input type="email" name="email" id="inpt" required>
+      <label for="message" class="lab">Message: </label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+      <button type="submit" class="btn-s">Send</button>
+    </form>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>Social Networks</h3>
+          <!-- <ul>
+                <li><a href="#">Email: rojascastaneda893@gmail.com</a></li>
+                <li><a href="#">Phone: +51 984 190 662</a></li>
+              </ul> -->
+          <div id="socials">
+            <a href="https://www.facebook.com/benja.ftp2" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/img/imgs-footer/facebook.png" alt=""></a>
+            <a href="mailto:rojascastaneda893@gmail.com" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/img/imgs-footer/gmail.png" alt=""></a>
+            <a href="https://www.instagram.com/r_dilmer/" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/img/imgs-footer/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/laureano-rojas-castañeda-01306b225" target="_blank"
+              rel="noopener noreferrer"><img src="./assets/img/imgs-footer/linkedin.png" alt=""></a>
+            <a href="tel:+51984190662" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/img/imgs-footer/telefono.png" alt=""></a>
+            <a href="https://wa.me/+51984190662" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/img/imgs-footer/whatsapp.png" alt=""></a>
+          </div>
         </div>
-    </nav>
-    <main id="m-res">
-        <h1>Welcome!!!</h1>
-        <section id="home">
-            <article>
-                <p id="description">I am <b>Laureano Rojas</b>, A passionate<b> Software Developer </b>  with an insatiable curiosity to explore and solve the technological challenges of today's world. 
-                    My journey in the world of technology is a constant search for knowledge and an unwavering dedication to creating innovative solutions. 
-                    From programming to project management, my approach is to build a bridge between theory and practice, transforming complex concepts into functional and efficient applications. 
-                    My desire to learn and my results-oriented mindset drive me to approach each project with enthusiasm and determination. 
-                    I explore the intersection between logic and creativity, creating solutions that not only solve problems, but also improve people's lives. 
-                    Welcome to my portfolio, where each project is a step on my ladder towards technological excellence.
-                </p>
-                <img src="./img/lenguajes-p.gif" alt="gif-prog" class="gif-p">
-                <button type="button" class="bottom">Download CV</button>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="socials">
-            <h3 class="social">Social networks:</h3>
-            <div id="social">
-                <a href="https://www.facebook.com/benja.ftp2"><img src="./img/facebook.png" alt="facebook" class="redes-s" id="face"></a>
-                <a href="https://twitter.com/Benyamin_R2003"><img src="./img/gorjeo.png" alt="twitter" class="redes-s" id="twi"></a>
-                <a href="https://wa.me/+51984190662"><img src="./img/whatsapp.png" alt="whatsapp" class="redes-s" id="what"></a>
-                <a href="https://www.instagram.com/r_dilmer/"><img src="./img/instagram.png" alt="instagram" id="inst"></a>
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Información</h3>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
         </div>
-        <div class="c">
-            <img src="./img/telefono.png" alt="">
-            <p class="parrafo">+51 984 190 662</p>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+
+          <p class="text-center">&copy; 2023 Rojas - Todos los derechos reservados</p>
         </div>
-        <div class="c">
-            <img src="./img/gmail.png" alt="" srcset="">
-            <p class="parrafo">rojascastaneda893@gmail.com</p>
-        </div>
-        <div class="c">
-            <img src="./img/ubicacion.png" alt="">
-            <p class="parrafo">Av. Miguel Grau 312 - Virú - La Libertad - Perú</p>
-        </div>
-        <p class="copi">Copyrigth © 2023 ◉ | LDRC | All rights Reserved</p>
-    </footer>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
