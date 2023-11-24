@@ -1,0 +1,127 @@
+/* Estilos para alinear los dos sections de forma horizontal */
+#projects {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+#proyecto1 img {
+    height: auto;
+    width: 250px;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+#proyect-title {
+    margin-left: 10px;
+    margin-top: 1px;
+    padding-bottom: 30px;
+}
+
+#title-3 {
+    margin-top: 0;
+}
+
+/* ANINEAR CONTENIDO VERTICALMENTE */
+/* ALINEAR EL CONTENIDO DE SECTION=PPROJECTS */
+/* #projects {
+        background-color: #00ffff29;
+        margin-right: 30px;
+        margin-left: 40px;
+        border-radius: 5%;
+        margin-bottom: 20px;
+    } */
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill,
+.project>div {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.project-img {
+    margin-top: 10%;
+    margin-bottom: -30px;
+}
+
+.project-img img {
+    border-radius: 5%;
+}
+
+#project-imgu img {
+    margin-right: 15px;
+    border-radius: 5%;
+}
+
+/* .skill, .project {
+        margin-left: 10px;
+    } */
+
+
+@media screen and (max-width: 921px) {
+    /* ESTILOS PARA TÍTULOS Y SUBTÍTULOS DE LA SECCIÓN PROJECTS */
+    /* #projects {
+        background-color: #00ffff29;
+        margin-left: 10px;
+    } */
+
+    #proyecto1 img {
+        height: auto;
+        width: 30vw;
+        margin-top: -1vh;
+        margin-left: 20px;
+    }
+
+    #proyect-title {
+        margin-left: 10px;
+        margin-top: 1px;
+        padding-bottom: 30px;
+    }
+
+    #title-3 {
+        margin-top: 0;
+    }
+
+    /* ANINEAR CONTENIDO VERTICALMENTE */
+    /* ALINEAR EL CONTENIDO DE SECTION=PPROJECTS */
+    #projects {
+        background-color: #00ffff29;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 5%;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .skill,
+    .project>div {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .project-img {
+        margin-top: 10%;
+        margin-bottom: -30px;
+    }
+
+    .project-img img {
+        border-radius: 5%;
+    }
+
+    #project-imgu img {
+        margin-right: 15px;
+        border-radius: 5%;
+    }
+
+    /* .skill, .project {
+        margin-left: 10px;
+    } */
+}
