@@ -912,6 +912,11 @@ footer #skills img {
 }
 
 @media screen and (max-width: 772px) {
+    #my-skills-c  img {
+        height: auto;
+        width: auto;
+    }
+
     .aboutme p {
         font-size: 15px;
     }
