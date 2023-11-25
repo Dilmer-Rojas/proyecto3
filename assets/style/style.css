@@ -855,7 +855,7 @@ footer #skills img {
         text-align: center;
     }
     #m-res h1 {
-        font-family: 'Concert One', cursive;
+        font-family: cursive, 'Concert One';
         text-shadow: 5px 5px 10px #00bfffb3;
         /* Sombra luminosa */
         text-align: center;
@@ -872,7 +872,7 @@ footer #skills img {
         color: #fbe5e5;
         text-shadow: 6px 6px 8px #1bbcfbe4;
         font-size: 20px;
-        margin-top: 15px;
+        margin-top: 25px;
         text-align: center;
         display: flex;
         align-content: center;
@@ -884,12 +884,12 @@ footer #skills img {
         font-size: 2vh;
         text-transform: capitalize;
         color: #121824;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Arial Narrow Bold', sans-serif;
         text-transform: capitalize;
         border-radius: 10px;
         margin-left: 2vw;
         padding: 15px 20px;
-        max-width: 30vw;
+        max-width: 40vw;
         border-style: none;
         border-color: aliceblue;
         cursor: pointer;
@@ -905,7 +905,7 @@ footer #skills img {
         border-radius: 10px;
         margin-left: 2vw;
         padding: 15px 20px;
-        max-width: 30vw;
+        max-width: 40vw;
         margin-top: 10px;
     }
 }
