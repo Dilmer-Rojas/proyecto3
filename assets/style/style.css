@@ -1,5 +1,3 @@
-
-
 /*Estilos Generales*/
 html,
 body {
@@ -16,7 +14,8 @@ body {
     /* Asegúrate de tener una imagen de fondo que sea responsiva o utilices 'background-size: cover;' */
     background-size: 100% 100vh;
     /* height: 50vh; 750px */
-    font-family: var(--font-logo); /* Revisar si se necesita esta fuente */
+    font-family: var(--font-logo);
+    /* Revisar si se necesita esta fuente */
     /* Duplicaste la propiedad 'font-family' aquí */
     color: var(--light-color);
     opacity: 1.9;
@@ -294,18 +293,25 @@ footer #skills img {
 }
 
 #my-skills-c {
-    /* margin-top: 15.7vh; */
-    padding-top: 40vh;
+    margin-top: 10vh;
+    padding-top: 20vh;
     height: auto;
+    padding-bottom: 10vh;
 }
 
 .habilidades {
     margin-left: 40px;
+    padding-bottom: 8vh;
+    font-size: 30px;
+    color: #00ff80;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .aboutme {
     background-color: #b9b9b93b;
-    height: 55vh;
+    height: auto;
+    padding-bottom: 8vh;
 }
 
 .contenedor-a {
@@ -315,7 +321,7 @@ footer #skills img {
 .aboutme .t {
     color: #00ff80;
     /* margin-left: 5px; */
-    padding-top: 3vh;
+    padding-top: 8vh;
     text-align: left;
     font-size: 30px;
     font-family: 'Saira Condensed', sans-serif;
@@ -324,7 +330,7 @@ footer #skills img {
 .cont {
     display: flex;
     /* justify-content: space-between; */
-    gap: var(--wp--style--block-gap, 4.3em );
+    gap: var(--wp--style--block-gap, 4.3em);
 }
 
 .elem {
@@ -342,13 +348,16 @@ footer #skills img {
 
 .aboutme .t2 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
-    color: #00f54abf;
+    font-size: 25px;
+    color: #eeefeebf;
 }
+
 .aboutme p {
     font-family: 'Barlow Condensed', sans-serif;
     color: #ffffff;
+    font-size: 20px;
 }
+
 /* .c-3 {
     background-color: #b9b9b93b;
     height: 55vh;
@@ -378,6 +387,7 @@ footer #skills img {
     margin-top: 4vh;
     margin-left: -5vw;
 }
+
 .elem-3 p {
     margin-left: -5vw;
     font-family: 'Barlow Condensed', sans-serif;
@@ -416,16 +426,21 @@ footer #skills img {
 .title-2 {
     /* text-align: center; */
     margin-left: 40px;
-    font-size: 25px;
     /* padding-top: 10px; */
+    padding-bottom: 1vh;
+    font-size: 30px;
+    color: #00ff80;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 #skills {
     margin-top: 3vh;
-    padding-top: 3vh;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
     background-color: #b9b9b93b;
     height: auto;
-    
+
 }
 
 .my-skills div img {
@@ -443,9 +458,18 @@ footer #skills img {
     padding-right: 30px;
 }
 
+.skill-c p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 #linea {
     margin-left: 2vw;
     margin-right: 2vh;
+    margin-bottom: 5vh;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-style: dotted;
+    color: #00FF00;
 }
 
 @keyframes zoomIn {
@@ -465,25 +489,41 @@ footer #skills img {
     /* Inicia la animación al pasar el ratón y mantiene el último estado */
 }
 
-@media screen and (max-width: 1033px) {
+@media screen and (max-width: 1128px) {
     body {
-        height: 120vh;
-
+        height: 100vh;
     }
+
     #my-skills-c {
-        margin-top: 5vh;
+        margin-top: 2vh;
         padding-top: 20vh;
     }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 1078px) {
     body {
-        height: 120vh;
+        height: 90vh;
 
     }
+
     #my-skills-c {
-        margin-top: 5vh;
+        margin-top: 2vh;
         padding-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 1018px) {
+    body {
+        height: 110vh;
+    }
+
+    #m-res h1 {
+        font-size: 40px;
+    }
+
+    #my-skills-c {
+        margin-top: 2vh;
+        padding-top: 5vh;
     }
 }
 
@@ -498,7 +538,7 @@ footer #skills img {
     }
 
     body {
-        background-image: url(../img/fondo-responsivo.jpeg);
+        background-image: url(../img/geek-resp.jpg);
         background-size: 100% 100%;
         /* cambiar las dimensiones de la image para que sea más responsive */
     }
@@ -526,9 +566,9 @@ footer #skills img {
 
     .logo h2 {
         font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-top: 27px;
-        margin-left: 8px;
-        font-size: 25px;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 20px;
     }
 
     .menu.active {
@@ -577,24 +617,24 @@ footer #skills img {
     }
 
     /* Añadir estilos a el contenido del main */
-    h1 {
+    #m-res h1 {
         font-family: 'Concert One', cursive;
         text-shadow: 5px 5px 10px #00bfffb3;
         /* Sombra luminosa */
-        font-size: 90px;
-        margin-top: 30px;
-        margin-left: 5%;
+        font-size: 35px;
+        margin-top: 20px;
+        max-width: 90vw;
     }
 
     #description {
-        font-size: 20px;
+        font-size: 18px;
         text-align: justify;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .bottom {
-        font-size: 30px;
+        font-size: 20px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-transform: capitalize;
         border-radius: 10px;
@@ -612,7 +652,7 @@ footer #skills img {
     }
 
     .bottom:hover {
-        font-size: 30px;
+        font-size: 20px;
         background-color: #ffd700;
         color: black;
         font-family: 'Concert One', cursive;
@@ -665,26 +705,33 @@ footer #skills img {
 
     #skills {
         background-color: #0d16248f;
-        margin-right: 1%;
-        margin-left: 1%;
-        margin-top: 10%;
-        border-style: groove;
+        /* margin-right: 1%;
+        margin-left: 1%; */
+        margin-top: 3vh;
     }
 
-    .skill {
+    .my-skills div img {
+        max-width: 10vw;
+    }
+
+    .my-skills {
         display: flex;
         /* Establece el modelo de caja flexible para los elementos hijos */
-        justify-content: space-around;
+        /* justify-content: space-around; */
         /* Distribuye los elementos con espacio alrededor */
-        align-items: center;
+        /* align-items: center; */
         /* Centra verticalmente los elementos */
     }
 
-    .skill>div {
-        text-align: center;
-        /* Centra el contenido de cada div hijo horizontalmente */
-        margin: 0 10px;
-        /* Agrega un margen horizontal para separar los elementos */
+    .skill-c {
+        text-align: left;
+        flex-basis: calc(33.3% - 1px);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .skill-c p {
+        font-family: 'Barlow Condensed', sans-serif;
     }
 
     .remot {
@@ -717,66 +764,186 @@ footer #skills img {
         margin-bottom: 3px;
     }
 
-    h4 {
-        margin-left: 15px;
+    .name-skill {
+        margin-left: 0px;
         padding: 2.5px 2.5px;
-        text-align: center;
+        text-align: left;
         font-size: 13px;
     }
 
-    /* FOOTER*/
+    /* Footer */
     footer {
-        background-color: #42413e;
-        margin-top: 10vh;
-        padding-top: 15px;
+        background-color: #333333;
         color: #ffffff;
+        /* padding: 50px 0; */
+        padding-top: 20vh;
     }
 
-    footer .copi {
-        text-align: center;
-        background-color: #000000eb;
-        color: #ffffff;
-        padding: 10px;
+    footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
-    footer img {
-        height: 20px;
-        width: auto;
-        margin-left: 30px;
-    }
-
-    .c {
+    footer .row {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    .c .parrafo {
-        margin-left: 10px;
-        margin-top: 3.5px;
-    }
-
-    .social {
-        margin-left: 25px;
-        text-transform: uppercase;
-    }
-
-    #social {
+    footer .col {
+        flex-basis: 25%;
         margin-bottom: 20px;
     }
 
-    .redes-s {
-        height: 30px;
-        width: auto;
-        padding-bottom: -18px;
+    footer h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        /* text-transform: uppercase; */
     }
 
-    #inst {
-        margin-bottom: -5px;
-        height: 35px;
-        width: auto;
+    footer p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
     }
 
-    .socials {
-        margin-left: 70vw;
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
+
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer hr {
+        border: none;
+        border-top: 1px solid #ffffff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .text-center {
+        text-align: left;
+    }
+
+    footer #socials img {
+        max-width: 40px;
+    }
+
+    footer #skills img {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Añadir estilos a el contenido del main */
+    #m-res {
+        text-align: center;
+    }
+    #m-res h1 {
+        font-family: 'Concert One', cursive;
+        text-shadow: 5px 5px 10px #00bfffb3;
+        /* Sombra luminosa */
+        text-align: center;
+        width: 70vw;
+        font-size: 25px;
+        padding-left: 8vw;
+        margin-top: 20px;
+        /* max-width: 100vw; */
+    }
+    #description {
+        font-family: 'Saira Condensed', sans-serif;
+        /* font-family: 'Barlow Condensed', sans-serif; */
+        color: #fbe5e5;
+        text-shadow: 6px 6px 8px #1bbcfbe4;
+        font-size: 3vh;
+        margin-top: 3px;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        /* margin-left: 0px; */
+        padding-left: 10vw;
+        width: 70vw;
+    }
+    .bottom {
+        font-size: 2vh;
+        text-transform: capitalize;
+        color: #121824;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: capitalize;
+        border-radius: 10px;
+        margin-left: 5vw;
+        padding: 15px 20px;
+        max-width: 25vw;
+        border-style: none;
+        border-color: aliceblue;
+        cursor: pointer;
+        background-color: hsl(120, 100%, 50%);
+        margin-top: 10px;
+    }
+    
+    .bottom:hover {
+        font-size: 2vh;
+        background-color: #ffd700;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 10px;
+        margin-left: 5vw;
+        padding: 15px 20px;
+        max-width: 25vw;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .aboutme p {
+        font-size: 15px;
+    }
+
+    .cont-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .elem-3 {
+        text-align: left;
+        flex-basis: calc(40.3% - 30px);
+    }
+    
+    .elem-3 .gif-p {
+        display: inline-block;
+        /* Cambia el flujo del elemento a en línea y bloque */
+        height: 25vh;
+        width: 25vw;
+        /* Limita el ancho de la imagen */
+        border-radius: 50%;
+        /* Agrega borde redondeado */
+        vertical-align: middle;
+        /* Alinea verticalmente con el párrafo */
+        margin-right: 2px;
+        margin-top: 4vh;
+        margin-left: -8vw;
+    }
+    .elem-3 p {
+        margin-left: -5vw;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #ffffff;
+        font-size: 15px;
     }
 }
 

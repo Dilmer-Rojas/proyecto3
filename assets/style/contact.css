@@ -6,6 +6,12 @@
     margin-bottom: -3vh;
 }
 
+#contact h3 {
+    font-size: 40px;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
 #social-n {
     display: flex;
     justify-content: center;

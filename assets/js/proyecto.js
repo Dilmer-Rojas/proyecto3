@@ -14,11 +14,14 @@ images.forEach(function (image) {
 function updateImage(event) {
     let image = event.target;
     let name = image.getAttribute("name");
-    let desc = image.getAttribute("desc")
+    let desc = image.getAttribute("desc");
+    let botonLink = image.getAttribute("boton-p");
+    let hrefLink = image.getAttribute("href");
 
     mainPhoto.src = image.src;
     updateCaption(name);
     updateDesc(desc);
+    updateBoton(botonLink, hrefLink);
 }
 
 function updateCaption(event) {
@@ -27,6 +30,17 @@ function updateCaption(event) {
 }
 
 function updateDesc(event) {
-    let proyecto = document.getElementById("proyecto")
+    let proyecto = document.getElementById("proyecto");
     proyecto.innerHTML = event;
+}
+
+function updateBoton(text, linkUrl) {
+    let botonDiv = document.getElementById("boton");
+    let link = botonDiv.querySelector('a');
+    
+    if (link) {
+        link.textContent = text || "";
+        link.href = linkUrl || ""; // Actualiza el href del enlace con la URL proporcionada, o lo deja vacío si no hay URL
+        link.target = "_blank"; 
+    }
 }
