@@ -288,8 +288,8 @@ img {
     .caption-wrapper #caption {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-transform: capitalize;
-        font-weight: 700;
-        font-size: 50px;
+        font-weight: 400;
+        font-size: 20px;
         margin-top: 50px;
         text-align: center;
         color: #daecdf;
@@ -302,9 +302,9 @@ img {
         text-align: center;
         text-transform: capitalize;
         text-shadow: 7px 7px 12px #050e11b3;
-        font-weight: 600;
+        font-weight: 300;
         letter-spacing: 3px;
-        font-size: 18px;
+        font-size: 10px;
         padding-left: 2vw;
         padding-right: 2vw;
     }
