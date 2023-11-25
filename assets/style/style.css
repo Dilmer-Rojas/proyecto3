@@ -913,7 +913,7 @@ footer #skills img {
 
 @media screen and (max-width: 772px) {
     #my-skills-c .element {
-        padding-left: -5px;
+        padding-left: -10px;
     }
 
     #my-skills-c  img {
