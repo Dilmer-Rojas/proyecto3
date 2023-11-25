@@ -855,7 +855,8 @@ footer #skills img {
         text-align: center;
     }
     #m-res h1 {
-        font-family: cursive, 'Concert One';
+        /* font-family: cursive, 'Concert One'; */
+        font-family: 'Barlow Condensed', sans-serif;
         text-shadow: 5px 5px 10px #00bfffb3;
         /* Sombra luminosa */
         text-align: center;
