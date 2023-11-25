@@ -273,7 +273,7 @@ img {
     .wrapper:hover #mainPhoto,
     .wrapper:hover .caption-wrapper {
         opacity: 1;
-        height: 20vh;
+        height: 30vh;
     }
     
     .caption-wrapper {
