@@ -52,9 +52,9 @@ body {
 
 .logo img {
     margin-top: 23px;
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
+    width: 15vw;
+    height: 15vh;
+    /* background-color: #ffffff; */
     border-radius: 30px;
     padding: 4px;
 }
