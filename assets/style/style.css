@@ -901,13 +901,13 @@ footer #skills img {
         border-style: none;
         border-color: aliceblue;
         cursor: pointer;
-        background-color: hsl(120, 100%, 50%);
+        background: linear-gradient(189deg, #27dd82, rgb(65, 201, 201));
         margin-top: 10px;
     }
     
     .bottom:hover {
         font-size: 2vh;
-        background-color: #ffd700;
+        background: linear-gradient(189deg, #a3c5b4, #3e4843);
         color: black;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         border-radius: 10px;
