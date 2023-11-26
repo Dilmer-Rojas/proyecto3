@@ -891,29 +891,29 @@ footer #skills img {
     .bottom {
         font-size: 2vh;
         text-transform: capitalize;
-        color: #121824;
-        font-family: 'Arial Narrow Bold', sans-serif;
+        color: #fcfcfc;
+        font-family: 'Anton', sans-serif;
         text-transform: capitalize;
         border-radius: 10px;
         margin-left: 2vw;
-        padding: 15px 20px;
-        max-width: 40vw;
+        padding: 12px 18px;
+        max-width: 20vw;
         border-style: none;
         cursor: pointer;
         border: 1px inset #007d5e;
-        background: linear-gradient(189deg, #27dd82, rgb(65, 201, 201));
+        background: linear-gradient(0deg, #01d9ffc4, #da0909);
         margin-top: 10px;
     }
     
     .bottom:hover {
         font-size: 2vh;
-        background: linear-gradient(189deg, #a3c5b4, #3e4843);
-        color: black;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: linear-gradient(19deg, #a3c5b4, #3e4843);
+        color: rgb(255, 251, 1);
+        font-family: 'Anton', sans-serif;
         border-radius: 10px;
         margin-left: 2vw;
-        padding: 15px 20px;
-        max-width: 40vw;
+        padding: 12px 18px;
+        max-width: 20vw;
         margin-top: 10px;
         border: 1px inset #007d5e;
     }
