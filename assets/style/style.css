@@ -52,8 +52,8 @@ body {
 
 .logo img {
     margin-top: 1vh;
-    width: 23vw;
-    height: 12vh;
+    width: 16vw;
+    height: 10vh;
     /* background-color: #ffffff; */
     border-radius: 30px;
     padding: 2px;
@@ -917,6 +917,8 @@ footer #skills img {
     }
     .logo img {
         margin-top: -2vh;
+        width: 23vw;
+        height: 12vh;
     }
     #my-skills-c .element {
         padding-left: -10px;
