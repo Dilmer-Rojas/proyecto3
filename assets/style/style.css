@@ -889,7 +889,7 @@ footer #skills img {
         width: 70vw;
     }
     .bottom {
-        font-size: 2vh;
+        font-size: 15px;
         text-transform: capitalize;
         color: #fcfcfc;
         font-family: 'Anton', sans-serif;
@@ -906,7 +906,7 @@ footer #skills img {
     }
     
     .bottom:hover {
-        font-size: 2vh;
+        font-size: 15px;
         background: linear-gradient(19deg, #a3c5b4, #3e4843);
         color: rgb(255, 251, 1);
         font-family: 'Anton', sans-serif;
