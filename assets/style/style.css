@@ -646,17 +646,18 @@ footer #skills img {
         padding: 15px 20px;
         width: 200px;
         max-width: 200px;
-        border-style: none;
-        border-color: aliceblue;
+        border: 1px inset #007d5e;
         cursor: pointer;
-        background-color: #00FF00;
+        background: linear-gradient(189deg, rgba(39, 66, 221, 0.612), rgb(201, 65, 65));
         transition: bacground-color 0.3s ease-in-out;
         font-family: 'Concert One', cursive;
     }
 
     .bottom:hover {
         font-size: 20px;
-        background-color: #ffd700;
+        border: 1px inset #daecdf;
+        cursor: pointer;
+        background: linear-gradient(189deg, rgba(39, 221, 148, 0.472), rgb(201, 65, 65));
         color: black;
         font-family: 'Concert One', cursive;
         border-radius: 10px;
@@ -666,7 +667,6 @@ footer #skills img {
         height: auto;
         width: 200px;
         max-width: 200px;
-        border-style: none;
     }
 
     /*Contact Me*/
@@ -899,8 +899,8 @@ footer #skills img {
         padding: 15px 20px;
         max-width: 40vw;
         border-style: none;
-        border-color: aliceblue;
         cursor: pointer;
+        border: 1px inset #007d5e;
         background: linear-gradient(189deg, #27dd82, rgb(65, 201, 201));
         margin-top: 10px;
     }
@@ -915,6 +915,7 @@ footer #skills img {
         padding: 15px 20px;
         max-width: 40vw;
         margin-top: 10px;
+        border: 1px inset #007d5e;
     }
 }
 
