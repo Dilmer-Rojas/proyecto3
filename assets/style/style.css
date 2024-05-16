@@ -11,7 +11,7 @@ body {
 body {
     background-image: url(../img/geek.jpg);
     filter: saturate(160%);
-    background-color: #00d48a;
+    background-color: #f9aa0082;
     /* Asegúrate de tener una imagen de fondo que sea responsiva o utilices 'background-size: cover;' */
     background-size: 100% 100vh;
     /* height: 50vh; 750px */
