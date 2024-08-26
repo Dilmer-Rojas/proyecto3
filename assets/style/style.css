@@ -671,6 +671,7 @@ button:hover span{
         align-items: center;
         z-index: 1000;
         /* Asegura que el menú esté en la parte superior */
+        margin-top: -10px;
     }
 
     .navbar {
@@ -1033,6 +1034,9 @@ button:hover span{
 }
 
 @media screen and (max-width: 772px) {
+    #m-res h1 {
+        font-size: 20px;
+    }
     .menu-icon {
         margin-top: -2vh;
     }
@@ -1108,12 +1112,12 @@ button:hover span{
 
     .bottom {
         font-family: 'Concert One', cursive;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .bottom:hover {
         font-family: 'Concert One', cursive;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     /* FOOTER --*/
