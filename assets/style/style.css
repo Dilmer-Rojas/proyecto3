@@ -1037,6 +1037,7 @@ button:hover span{
 @media screen and (max-width: 772px) {
     body {
         background-size: cover;
+        width: 115%;
     }
     
     #m-res h1 {
@@ -1108,19 +1109,19 @@ button:hover span{
         margin-left: 15px;
     }
     .aboutme {
-        width: 135%;
+        width: 115%;
     }
     #skills {
-        width: 135%;
+        width: 115%;
     }
     .proyectos {
-        width: 135%;
+        width: 115%;
     }
     #contact {
-        width: 135%;
+        width: 115%;
     }
     footer {
-        width: 135%;
+        width: 115%;
     }
     .cont {
         gap: var(--wp--style--block-gap, 0.3em);
