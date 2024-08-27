@@ -1110,19 +1110,19 @@ button:hover span{
         margin-left: 15px;
     }
     .aboutme {
-        width: 100vw;
+        width: 120vw;
     }
     #skills {
-        width: 100vw;
+        width: 120vw;
     }
     .proyectos {
-        width: 100vw;
+        width: 120vw;
     }
     #contact {
-        width: 100vw;
+        width: 120vw;
     }
     footer {
-        width: 100vw;
+        width: 120vw;
     }
     .cont {
         gap: var(--wp--style--block-gap, 0.3em);
