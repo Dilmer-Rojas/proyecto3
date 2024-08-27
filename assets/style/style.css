@@ -311,6 +311,7 @@ footer #skills img {
 
 .aboutme {
     background-color: #b9b9b93b;
+    width: 120vw;
     height: auto;
     padding-bottom: 8vh;
 }
@@ -1063,7 +1064,10 @@ button:hover span{
     }
 
     .aboutme p {
-        font-size: 15px;
+        font-size: 13px;
+    }
+    .aboutme .t2 {
+        font-size: 16px;
     }
 
     .cont-3 {
@@ -1097,6 +1101,31 @@ button:hover span{
         color: #ffffff;
         font-size: 15px;
     }
+    .contenedor-a {
+        margin-left: 15px;
+    }
+    .aboutme {
+        width: 145%;
+    }
+    #skills {
+        width: 145%;
+    }
+    .proyectos {
+        width: 145%;
+    }
+    #contact {
+        width: 145%;
+    }
+    footer {
+        width: 145%;
+    }
+    .cont {
+        gap: var(--wp--style--block-gap, 2.3em);
+    }
+    .linear {
+        margin-left: 0px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
