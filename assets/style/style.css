@@ -653,7 +653,7 @@ button:hover span{
 
     body {
         background-image: url(../img/geek-resp.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
         /* cambiar las dimensiones de la image para que sea más responsive */
     }
 
